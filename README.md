@@ -31,3 +31,38 @@ Unlike face classification, which tries to identify a person from a known datase
 ## Installation
 ```bash
 pip install -r requirements.txt
+
+## Dataset
+
+This project was developed and tested using the VGGFace2 dataset, a large-scale face recognition dataset containing a wide variety of identities, poses, lighting conditions, and facial expressions.
+
+The dataset was used to experiment with face embeddings and similarity comparison between images. Due to the large file size and licensing restrictions, the dataset is not included in this repository.
+
+Dataset source:
+https://www.robots.ox.ac.uk/~vgg/data/vgg_face2/
+
+## Results
+
+The model successfully compares two face images by converting them into numerical embeddings and calculating their similarity score.
+
+When two images belong to the same person, the similarity score is generally higher. When the images belong to different people, the similarity score decreases significantly.
+
+The project demonstrated effective face verification performance under normal lighting and clear facial visibility. Performance may vary depending on image quality, angle, facial obstruction, and lighting conditions.
+
+## Limitations
+
+- Verification accuracy may decrease when images are blurry, low quality, or poorly lit.
+- Large differences in facial angle or facial expression can affect similarity scores.
+- The model may struggle with partially covered faces or extreme lighting conditions.
+- The verification threshold may require adjustment depending on the dataset or use case.
+- This project focuses on verification between two images rather than full facial identification across large databases.
+
+## Future Improvements
+
+- Add real-time webcam face verification.
+- Improve face detection and image preprocessing before embedding generation.
+- Experiment with different pretrained face recognition models.
+- Build a graphical user interface or web application for easier interaction.
+- Optimize the model for faster real-time performance.
+- Evaluate performance on larger and more diverse datasets.
+- Add automatic threshold calibration for improved verification accuracy.
