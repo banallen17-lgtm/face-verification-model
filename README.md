@@ -31,9 +31,7 @@ Unlike face classification, which tries to identify a person from a known datase
 ## Installation
 ```bash
 pip install -r requirements.txt
-
-bash'''
-
+```
 ## Dataset
 
 This project was developed and tested using the VGGFace2 dataset, a large-scale face recognition dataset containing a wide variety of identities, poses, lighting conditions, and facial expressions.
@@ -50,6 +48,14 @@ The model successfully compares two face images by converting them into numerica
 When two images belong to the same person, the similarity score is generally higher. When the images belong to different people, the similarity score decreases significantly.
 
 The project demonstrated effective face verification performance under normal lighting and clear facial visibility. Performance may vary depending on image quality, angle, facial obstruction, and lighting conditions.
+
+### Example Outputs
+
+#### Same Person Verification
+![Same Person Result](assets/same_person_result.png)
+
+#### Different Person Verification
+![Different Person Result](assets/different_person_result.png)
 
 ## Limitations
 
@@ -68,3 +74,15 @@ The project demonstrated effective face verification performance under normal li
 - Optimize the model for faster real-time performance.
 - Evaluate performance on larger and more diverse datasets.
 - Add automatic threshold calibration for improved verification accuracy.
+
+## Project Structure
+
+```text
+face-verification-model/
+│
+├── README.md
+├── requirements.txt
+├── notebooks/
+├── src/
+├── assets/
+└── data/
