@@ -32,6 +32,8 @@ Unlike face classification, which tries to identify a person from a known datase
 ```bash
 pip install -r requirements.txt
 
+bash'''
+
 ## Dataset
 
 This project was developed and tested using the VGGFace2 dataset, a large-scale face recognition dataset containing a wide variety of identities, poses, lighting conditions, and facial expressions.
